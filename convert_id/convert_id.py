@@ -5,7 +5,7 @@ id_input = '001A000010khO8J'
 print 'id_input: ' + id_input
 
 # Split id into list of 5 character chunks
-id_split = [id_input[i:i+5] for i in range(0, len(id_input), 5)]
+id_split = [id_input[i:i + 5] for i in range(0, len(id_input), 5)]
 print 'id_split: ' + str(id_split)
 
 # Reverse the strings in split_id
