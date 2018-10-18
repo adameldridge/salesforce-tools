@@ -12,7 +12,7 @@ print 'id_split: ' + str(id_split)
 id_split_reversed = [chunk[::-1] for chunk in id_split]
 print 'id_split_reversed: ' + str(id_split_reversed)
 
-# Convert uppercase chars to 1 and lowercase to 0
+# Convert uppercase chars to 1 and everything else to 0
 id_split_binary = [re.sub(r'[a-z,0-9]', "0", chunk) for chunk in id_split_reversed]
 id_split_binary = [re.sub(r'[A-Z]', "1", chunk) for chunk in id_split_binary]
 
