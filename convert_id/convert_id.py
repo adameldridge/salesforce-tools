@@ -18,7 +18,7 @@ id_split_binary = [re.sub(r'[A-Z]', "1", chunk) for chunk in id_split_binary]
 
 print 'id_split_binary: ' + str(id_split_binary)
 
-# Look up the corresponding char in the BinaryIdLookup
+# Look up the corresponding char in the binary_char_lookup
 binary_char_lookup = {
     "00000": "A", "00001": "B", "00010": "C", "00011": "D", "00100": "E",
     "00101": "F", "00110": "G", "00111": "H", "01000": "I", "01001": "J",
