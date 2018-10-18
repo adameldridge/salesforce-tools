@@ -2,10 +2,11 @@ import re
 
 # TODO: take input id as a parameter from command line
 id_input = '001A000010khO8J'
+print 'id_input: ' + id_input
 
 # Split id into list of 5 character chunks
 id_split = [id_input[i:i+5] for i in range(0, len(id_input), 5)]
-print 'split_id: ' + str(id_split)
+print 'id_split: ' + str(id_split)
 
 # Reverse the strings in split_id
 id_split_reversed = [chunk[::-1] for chunk in id_split]
