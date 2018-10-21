@@ -7,7 +7,6 @@ def convert_id(input_id):
     # TODO: Add error handling for string length
 
     # Split id into list of 5 character chunks
-    # id_split = [input_id[i:i + 5] for i in range(0, len(input_id), 5)]
     id_split = textwrap.wrap(input_id, 5)
     print 'id_split: ' + str(id_split)
 
